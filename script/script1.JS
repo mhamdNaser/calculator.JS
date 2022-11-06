@@ -61,3 +61,14 @@ function test_four(){
         document.getElementById("demo1").innerHTML = 'Done While Loop' ;
     }
 }
+
+function test_continue(){
+    let x = prompt('enter start number  "number > 0" ',)
+    for( i = 0 ; i < x ; i++){
+        if(i == 5){
+            continue;
+        }
+        console.log(i);
+    }
+    document.getElementById("demo1").innerHTML = 'Done For Loop' ;
+}
