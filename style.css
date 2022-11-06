@@ -1,0 +1,38 @@
+header{
+    background-color: brown;
+    color: white;
+    padding: 1%;
+    text-align: center;
+}
+
+section{
+    display: grid;
+    grid-template-columns: 30% auto;
+    width: 80%;
+    margin: 0 auto;
+}
+
+section div{
+    text-align: center;
+    font-size: 24px;
+    border-bottom: 1px solid black;
+}
+
+button{
+    margin: 2.5% 1% 0 0;
+    padding: 1%;
+    background-color: brown;
+    border: none;
+    color: white;
+}
+
+button:hover{
+    background-color: #ffE6A7;
+    font-weight: bolder;
+    color: brown;
+}
+
+h5{
+    color: brown;
+}
+

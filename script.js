@@ -96,3 +96,4 @@ function Function_four(){
     console.log(Number(Area ));
     document.getElementById("demo").innerHTML = Area  ;
 }
+
