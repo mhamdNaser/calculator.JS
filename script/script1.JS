@@ -38,8 +38,8 @@ function test_one(){
 
 function test_two(){
     let x = prompt('enter start number  "number > 0" ',)
-    for( i = x ; i > 0 ; i--){
-        console.log(--x);
+    for( i = 0 ; i < x ; i++){
+        console.log(i);
     }
     document.getElementById("demo1").innerHTML = 'Done For Loop' ;
 }
