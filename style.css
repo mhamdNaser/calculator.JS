@@ -7,7 +7,7 @@ header{
 
 section{
     display: grid;
-    grid-template-columns: 30% auto;
+    grid-template-columns: 20% 40% 40%;
     width: 80%;
     margin: 0 auto;
 }
@@ -18,9 +18,16 @@ section div{
     border-bottom: 1px solid black;
 }
 
+p{
+    display: inline-block;
+    font-size: 14PX;
+    margin-top: 35px;
+    text-align: left;
+}
+
 button{
-    margin: 2.5% 1% 0 0;
-    padding: 1%;
+    margin-top: 30px;
+    padding: 10px;
     background-color: brown;
     border: none;
     color: white;
