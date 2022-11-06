@@ -59,3 +59,16 @@ function Function_first(){
         document.getElementById("demo2").innerHTML = 'none' ;
     }
 }
+
+function Function_two(){
+
+    let str = '';
+    for(i = 1; i < 5 ; i++) {
+        for(j = 0 ; j < i ; j++) {
+            str += j + j ;
+            str += ' ';
+        }
+        str += '\n';
+    }
+    console.log(str);
+}
