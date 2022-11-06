@@ -52,3 +52,12 @@ function test_three(){
     }
     while(x > 0)
 }
+
+function test_four(){
+    let x = prompt('enter your number :')
+    while(x > 0)
+    {
+        console.log(--x);
+        document.getElementById("demo1").innerHTML = 'Done While Loop' ;
+    }
+}
