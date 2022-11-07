@@ -63,12 +63,25 @@ function Function_first(){
 function Function_two(){
 
     let str = '';
-    for(i = 1; i < 5 ; i++) {
-        for(j = 0 ; j < i ; j++) {
-            str += j + j ;
-            str += ' ';
+    let a = 1;
+    for(let i = 1; i <= 4 ; i++) {
+        for( let j = 1 ; j <= i ; j++) {
+            document.write(a++);
         }
-        str += '\n';
+        document.write('<br>')
     }
-    console.log(str);
 }
+
+function Function_three(){
+
+    for ( x = 0 ; x<1000 ; x++){
+        
+        if ( x % 13 == 1){
+            console.log(x)
+        }
+        else{
+            break;
+        }
+    }
+}
+
