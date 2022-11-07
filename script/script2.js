@@ -1,4 +1,4 @@
-function Function_first(){
+function Function1_first(){
     let x = prompt('ENTER MONTH NUMBER :')
     if( x>=1 && x<=12){
         switch ( x <= 12) {
@@ -60,7 +60,7 @@ function Function_first(){
     }
 }
 
-function Function_two(){
+function Function1_two(){
 
     let i,j ;
     let a = 1;
@@ -73,7 +73,7 @@ function Function_two(){
     }
 }
 
-function Function_three(){
+function Function1_three(){
 
     for ( x = 1 ; x <= 1000 ; x++){
         

@@ -1,4 +1,4 @@
-function test_zero(){
+function test1_zero(){
     let first = "Muhammed";
     let last = "naser";
 
@@ -9,28 +9,28 @@ function test_zero(){
     document.getElementById("demo3").innerHTML = len + ' ' + resli  + ' ' + str;
 }
 
-function test_one(){
+function test1_one(){
     let name =  "my name is : name set" ;
     document.getElementById("demo3").innerHTML = name.replace("name set", "muhammed naser");
 }
 
-function test_two(){
+function test1_two(){
     let first = "this my project name this the first pro for name ";
     document.getElementById("demo3").innerHTML = first.replaceAll("name", "Muhammed");
 
 }
 
-function test_three(){
+function test1_three(){
     let first = "Muhammed";
     document.getElementById("demo3").innerHTML =  first.toUpperCase();
 }
 
-function test_four(){
+function test1_four(){
     let first = "MUHAMMED";
     document.getElementById("demo3").innerHTML =  first.toLowerCase();
 }
 
-function test_five(){
+function test1_five(){
     let first = "Muhammed";
     let last = "Naser";
     let full = first.concat(" "+last);
