@@ -22,6 +22,8 @@ p{
     display: inline-block;
     font-size: 14PX;
     margin-top: 35px;
+    margin-left: 10px;
+    margin-right: 10px;
     text-align: left;
 }
 
