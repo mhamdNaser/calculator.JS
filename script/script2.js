@@ -62,11 +62,12 @@ function Function_first(){
 
 function Function_two(){
 
-    let str = '';
+    let i,j ;
     let a = 1;
-    for(let i = 1; i <= 4 ; i++) {
-        for( let j = 1 ; j <= i ; j++) {
+    for( i = 1; i <= 4 ; i++) {
+        for( j = 1 ; j <= i ; j++) {
             document.write(a++);
+            document.write(' ');
         }
         document.write('<br>')
     }
@@ -74,13 +75,13 @@ function Function_two(){
 
 function Function_three(){
 
-    for ( x = 0 ; x<1000 ; x++){
+    for ( x = 1 ; x <= 1000 ; x++){
         
-        if ( x % 13 == 1){
-            console.log(x)
+        if ( x%13 == 0 ){
+            document.write(x);
+            document.write('<br>');
         }
         else{
-            break;
         }
     }
 }
