@@ -460,3 +460,40 @@ function task1_zero(){
 
     
 }
+
+/* ---------- 5Th Taske --------------- */
+function task2_zero(){
+    document.getElementById("demo5").innerHTML = "Hellow world";
+    document.getElementById("demo5").style.backgroundColor = "yellow";
+    document.getElementById("demo5").style.padding = "5px";
+    document.getElementById("demo5").setAttribute("onclick", "color()"); 
+}
+
+function task2_one(){
+    document.getElementById("demo5").innerHTML = "Hellow world";
+    document.getElementById("demo5").style.padding = "5px";
+    setInterval(auto_color,1000);
+}
+
+function task2_two(elem){
+    let x = document.getElementById(elem).value;
+    document.getElementById("img1").src = "a.png";
+}
+
+
+function color(){
+    document.getElementById("demo5").style.backgroundColor = "red";
+}
+
+function auto_color(){
+    document.getElementById("demo5").style.backgroundColor= getRandomColor();
+}
+
+function getRandomColor() {
+    var letters = '0123456789ABCDEF';
+    var color = '#';
+    for (var i = 0; i < 6; i++ ) {
+        color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+}

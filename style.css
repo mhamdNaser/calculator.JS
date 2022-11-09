@@ -18,10 +18,16 @@ section div{
 }
 
 p{
+    width: 100%;
     padding: 1%;
     display: inline-block;
     font-size: 14PX;
     text-align: left;
+}
+
+select{
+    width: 80%;
+    color: black;
 }
 
 .button-container{
@@ -49,6 +55,11 @@ button:hover{
 
 h5{
     color: brown;
+}
+
+img{
+    width: 300px;
+    height: 300px;
 }
 
 @media only screen and (max-width: 600px) {
