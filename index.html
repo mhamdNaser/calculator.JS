@@ -103,15 +103,56 @@
         </section>
         <section>
             <div>
-                <select onchange="task2_two()">
-                    <option value="a.png">orange</option>
-                    <option value="x">Syria</option>
-                    <option value="y">Jordan</option>
-                </select>
+                <div>
+                    <select id="greet" onchange="task2_two()">
+                        <option value="orange">orange</option>
+                        <option value="syria">Syria</option>
+                        <option value="jordan">Jordan</option>
+                    </select>
+                </div>
+                <div>
+                    <img id="img1" src="" alt="">
+                </div>
             </div>
             <div>
-                <img id="img1" src="" alt="">
+                <div>
+                    <select id="type" onchange="type_font()">
+                        <option value="Arial">Arial</option>
+                        <option value="Tahoma">Tahoma</option>
+                        <option value="sansSerif">sans-serif</option>
+                    </select>
+                    <select id="size" onchange="size_font()">
+                        <option value="8">8px</option>
+                        <option value="10">10px</option>
+                        <option value="14">14px</option>
+                        <option value="18">18px</option>
+                        <option value="24">24px</option>
+                        <option value="36">36px</option>
+                    </select>
+                </div>
+                <div>
+                    <input type="checkbox" onclick="task2_three()" id="italic" id="">Italic
+                    <input type="checkbox" onclick="task2_three()" id="bold" id="">Bold
+                    <input type="checkbox" onclick="task2_three()" id="underline" id="">Underline
+                </div>
+                <div><p id="demo6">Lorem Ipsum is simply dummy text of the printing and typesetting industry typesetting industry</p></div>
             </div>
+            <div>
+                <div style="text-align: left;">
+                    <h3>first text</h3>
+                    <button class="norml" onclick="show1()">read more</button>
+                    <div><p id="demo7">Lorem Ipsum is simply dummy text of the printing and typesetting industry typesetting industry</p></div>
+                    <h3>second text</h3>
+                    <button class="norml" onclick="show2()">read more</button>
+                    <div><p id="demo8">Lorem Ipsum is simply dummy text of the printing and typesetting industry typesetting industry</p></div>
+                    <h3>third text</h3>
+                    <button class="norml" onclick="show3()">read more</button>
+                    <div><p id="demo9">Lorem Ipsum is simply dummy text of the printing and typesetting industry typesetting industry</p></div>
+                </div>
+            </div>
+        </section>
+        <section>
+            
         </section>
     </main>
     <script src="./script/script.js"></script>

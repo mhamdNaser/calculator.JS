@@ -465,20 +465,105 @@ function task1_zero(){
 function task2_zero(){
     document.getElementById("demo5").innerHTML = "Hellow world";
     document.getElementById("demo5").style.backgroundColor = "yellow";
-    document.getElementById("demo5").style.padding = "5px";
     document.getElementById("demo5").setAttribute("onclick", "color()"); 
 }
 
 function task2_one(){
     document.getElementById("demo5").innerHTML = "Hellow world";
-    document.getElementById("demo5").style.padding = "5px";
     setInterval(auto_color,1000);
 }
 
-function task2_two(elem){
-    let x = document.getElementById(elem).value;
-    document.getElementById("img1").src = "a.png";
+function task2_two(){
+    let x = document.getElementById('greet').value;
+    if( x == "orange" ){
+        document.getElementById('img1').src = "a.png";
+    }
+    else if( x == "syria" ){
+        document.getElementById('img1').src = "s.png";
+    }
+    else if( x == "jordan" ){
+        document.getElementById('img1').src = "j.png";
+    }
 }
+
+function type_font(){
+    let x = document.getElementById('type').value;
+    if( x == "Arial" ){
+        document.getElementById('demo6').style.fontFamily= 'Arial';
+    }
+    else if( x == "Tahoma" ){
+        document.getElementById('demo6').style.fontFamily= 'Tahoma';
+    }
+    else if( x == "sansSerif" ){
+        document.getElementById('demo6').style.fontFamily= 'sansSerif';
+    }
+}
+
+function size_font(){
+    let x = document.getElementById('size').value;
+    if( x == "8" ){
+        document.getElementById('demo6').style.fontSize = "8px";
+    }
+    else if( x == "10" ){
+        document.getElementById('demo6').style.fontSize = "10px";
+    }
+    else if( x == "14" ){
+        document.getElementById('demo6').style.fontSize = "14px";
+    }
+    else if( x == "18" ){
+        document.getElementById('demo6').style.fontSize = "18px";
+    }
+    else if( x == "24" ){
+        document.getElementById('demo6').style.fontSize = "24px";
+    }
+    else if( x == "36" ){
+        document.getElementById('demo6').style.fontSize = "36px";
+    }
+}
+
+function task2_three(){
+    let it = document.getElementById('italic');
+    let b = document.getElementById('bold');
+    let un = document.getElementById('underline');
+    if ( it.checked == true ){
+        document.getElementById('demo6').style.fontStyle ='italic';
+    }
+    else if ( it.checked == false ){
+        document.getElementById('demo6').style.fontStyle ='normal';
+    }
+    if ( b.checked == true ){
+        document.getElementById('demo6').style.fontWeight ='bold';
+    }
+    else if ( b.checked == false ){
+        document.getElementById('demo6').style.fontWeight ='normal';
+    }
+    if ( un.checked == true ){
+        document.getElementById('demo6').style.textDecoration ='underline';
+    }
+    else if ( un.checked == false ){
+        document.getElementById('demo6').style.textDecoration ='none';
+    }
+}
+
+function show1(){
+    document.getElementById("demo7").style.display= "block";
+    document.getElementById("demo8").style.display= "none";
+    document.getElementById("demo9").style.display= "none";
+}
+
+function show2(){
+    document.getElementById("demo8").style.display= "block";
+    document.getElementById("demo7").style.display= "none";
+    document.getElementById("demo9").style.display= "none";
+}
+
+function show3(){
+    document.getElementById("demo9").style.display= "block";
+    document.getElementById("demo8").style.display= "none";
+    document.getElementById("demo7").style.display= "none";
+}
+
+document.getElementsByTagName('input')
 
 
 function color(){
@@ -486,14 +571,13 @@ function color(){
 }
 
 function auto_color(){
-    document.getElementById("demo5").style.backgroundColor= getRandomColor();
-}
-
-function getRandomColor() {
-    var letters = '0123456789ABCDEF';
-    var color = '#';
-    for (var i = 0; i < 6; i++ ) {
-        color += letters[Math.floor(Math.random() * 16)];
+    function getRandomColor() {
+        var letters = '0123456789ABCDEF';
+        var color = '#';
+        for (var i = 0; i < 6; i++ ) {
+            color += letters[Math.floor(Math.random() * 16)];
+        }
+        return color;
     }
-    return color;
+    document.getElementById("demo5").style.backgroundColor= getRandomColor();
 }
