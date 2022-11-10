@@ -473,7 +473,7 @@ function task2_one(){
     setInterval(auto_color,1000);
 }
 
-function task2_two(){
+function flag_chose(){
     let x = document.getElementById('greet').value;
     if( x == "orange" ){
         document.getElementById('img1').src = "a.png";
