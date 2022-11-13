@@ -151,14 +151,69 @@
                 </div>
             </div>
         </section>
-        <section style="display: block">
+        <section class="full-width">
             <div>
-                <button><a href="">Coach Task</a></button>
+                <h5>TH_10_11</h5>
             </div>
-        </section>%
+            <div>
+                <form>
+                    <label>Name:</label>
+                    <input type="text" name="userName" onchange="setData(value,name)">
+                    <label>Email:</label>
+                    <input type="email" name="userEmail" onchange="setData(value,name)">
+                    <label>Mobile:</label>
+                    <input type="number" name="userNumber" onchange="setData(value,name)">
+                    <button type="submit" onclick="show3()">submit</button>
+                </form>
+                <div> 
+                    <span id="userName"></span>
+                    <span id="userEmail"></span>
+                    <span id="userNumber"></span>
+                </div>
+                <div id="tableContainer" style="width: 30%; margin: 0 auto; padding: 2%"> </div>
+            </div>
+        </section>
+        <section>
+            <div>
+                <h5>SU_13_11</h5>
+            </div>
+            <div class="button-container">
+                <button onclick="task3_zero()">Task0</button>
+            </div>
+            <div></div>
+        </section>
+        <section>
+            <div>
+            </div>
+            <div class="button-container">
+                <button onclick="task4_zero()">Task0</button>
+                <button onclick="task4_one()">Task1</button>
+                <button onclick="task4_two()">Task2</button>
+                <button onclick="task4_three()">Task3</button>
+                <button onclick="task4_four()">Test4</button>
+                <button onclick="task4_five()">Test5</button>
+                <button onclick="task4_six()">Test6</button>
+                <button onclick="task4_seven()">Test7</button>
+                <button onclick="task4_eght()">Test8</button>
+                <button onclick="task4_nine()">Test9</button>
+
+                <button onclick="task5_zero()">Task0</button>
+                <button onclick="task5_one()">Task1</button>
+                <button onclick="task5_two()">Task2</button>
+                <button onclick="task5_three()">Task3</button>
+                <button onclick="task5_four()">Test4</button>
+                <button onclick="task5_five()">Test5</button>
+                <button onclick="task5_six()">Test6</button>
+                <button onclick="task5_seven()">Test7</button>
+                <button onclick="task5_eght()">Test8</button>
+                <button onclick="task5_nine()">Test9</button>
+            </div>
+            <div><p id="demo10"></p></div>
+        </section>
     </main>
     <script src="./script/script.js"></script>
     <script src="./script/script1.js"></script>
     <script src="./script/script2.js"></script>
+    <script src="./script/sundy.js"></script>
 </body>
 </html>

@@ -13,7 +13,12 @@ section{
     border-bottom: 1px solid black;
 }
 
-section:nth-of-type(7){
+.full-width{
+    display: grid;
+    grid-template-columns: auto;
+}
+
+section:nth-of-type(7), section:nth-of-type(10){
     border-bottom: none;
 }
 
@@ -37,9 +42,12 @@ select{
     padding: 2%;
 }
 
+form{ width: 60%; margin: 0 auto;}
+
 input{
-    margin: 1% 6%;
-    padding: 2%;
+    margin: 1% 2%;
+    padding: 1%;
+    height: 20px;
 }
 
 .button-container{
@@ -51,7 +59,7 @@ input{
 
 button{
     width: 80px;
-    height: 60px;
+    height: 40px;
     padding: 2%;
     margin: 2% 0 2% 0;
     background-color: brown;
