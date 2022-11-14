@@ -13,6 +13,9 @@ task4_one = () => {
     const arry1 = [5,1,2,3,10] 
     arry.forEach(onlyEvenValues);
     arry1.forEach(onlyEvenValues);
+
+    console.log(arry);
+    console.log(arry1);
 }
 
 function doubleValues(item,index, arrNew){
@@ -21,7 +24,7 @@ function doubleValues(item,index, arrNew){
 
 function onlyEvenValues(item,index, arrNew){
     if ( arrNew[index]%2 == 0 ){
-        console.log(item);
+        arrNew[index] = item;
     }
 }
 
