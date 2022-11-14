@@ -12,7 +12,7 @@ getdata = () => {
         phone: user_phoneNumber
     }
     
-    localStorage.setItem( JSON.stringify(user_fName) , JSON.stringify(array))
+    localStorage.setItem( user_fName , JSON.stringify(array))
 
     window.open('./login.html');
 }
@@ -21,14 +21,19 @@ checkdata = () => {
     var userName = document.getElementById('UserName').value;
     var passcheck = document.getElementById('pass').value;
 
-    alert("hello");
-    var x = localStorage.setItem( JSON.parse(array.fname))
-    var y = localStorage.setItem( JSON.parse(array.passw))
-    
-    if( userName == x && passcheck == y)
-    {
-         
+    var x = JSON.parse(localStorage.getItem(fname))
+
+    if(!x){
+        console.log('user doesnt exist');
     }
+    
+    var password = document.getElementById("password").value;
+    
+    if (userFromLocalStorage.passw !== passcheck){
+        console.log('wrong password');
+    }
+    
+    console.log('logged in successfully');
 
 }
 
