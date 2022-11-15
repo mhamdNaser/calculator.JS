@@ -40,7 +40,6 @@ function setUserData(userData) {
         //     mobile:"07777777777"
         // }
     ];
-    localStorage.setItem(rows);
     var html = "<table  border='2'>";
     for (var i = 0; i < rows.length; i++) {
         html += "<tr>";

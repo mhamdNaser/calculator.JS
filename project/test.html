@@ -33,13 +33,13 @@
 </head>
 <body>
     <main>
-        <form  id="myForm" method="post">
+        <form  id="myForm" onsubmit="getdata()">
             <input type="text" id="fName" placeholder="FirstName">
             <input type="text" id="lname" placeholder="LastName">
             <input type="email" id="Email" placeholder="Email">
             <input type="password" id="password" placeholder="Password">
-            <input type="number" id="phoneNumber" placeholder="PhoneNumber">
-            <button type="submit" onclick="getdata()">Submit</button>
+            <input type="number" id="Number" placeholder="Number">
+            <button type="submit">Submit</button>
             <button type="submit" value="Submit" onclick="nondata()" style="background-color: red;">clear</button>
         </form>
     </main>

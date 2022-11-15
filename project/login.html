@@ -34,9 +34,9 @@
 <body>
     <main>
         <form  id="myForm" method="get">
-            <input type="text" id="UserName" placeholder="UserName">
-            <input type="password" id="pass" placeholder="Password">
-            <button type="submit" onclick="checkdata()">Login</button>
+            <input type="text" id="UserName" name="username" placeholder="UserName" onchange="checkdata()">
+            <input type="password" id="pass" name="pasSword" placeholder="Password" onchange="checkdata()">
+            <button type="submit" onclick="">Login</button>
         </form>
     </main>
     <script src="test.js"></script>
