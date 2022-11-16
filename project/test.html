@@ -33,14 +33,13 @@
 </head>
 <body>
     <main>
-        <form  id="myForm" onsubmit="getdata()">
-            <input type="text" id="fName" placeholder="FirstName">
-            <input type="text" id="lname" placeholder="LastName">
-            <input type="email" id="Email" placeholder="Email">
-            <input type="password" id="password" placeholder="Password">
-            <input type="number" id="Number" placeholder="Number">
+        <form  id="form">
+            <input type="text" id="fName" name="fname" placeholder="FirstName" onchange="checked(name , value)">
+            <input type="text" id="lname" name="lname" placeholder="LastName" onchange="checked()">
+            <input type="email" id="Email" name="Email" placeholder="Email" onchange="checked()">
+            <input type="password" id="password" name="password" placeholder="Password" onchange="checked()">
             <button type="submit">Submit</button>
-            <button type="submit" value="Submit" onclick="nondata()" style="background-color: red;">clear</button>
+            <button type="submit" onclick="nondata()" style="background-color: red;">clear</button>
         </form>
     </main>
     <script src="test.js"></script>

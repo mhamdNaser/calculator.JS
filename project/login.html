@@ -18,6 +18,7 @@
             margin: 2% auto;
             padding: 2%;
             width: 60%;
+            
         }
         button{
             display: block;
@@ -32,13 +33,12 @@
     </style>
 </head>
 <body>
-    <main>
-        <form  id="myForm" method="get">
+        <form  id="form">
             <input type="text" id="UserName" name="username" placeholder="UserName" onchange="checkdata()">
             <input type="password" id="pass" name="pasSword" placeholder="Password" onchange="checkdata()">
-            <button type="submit" onclick="">Login</button>
+            <button type="submit">Login</button>
         </form>
-    </main>
-    <script src="test.js"></script>
+        <p id="log"></p>
+    <script src="login.js"></script>
 </body>
 </html>

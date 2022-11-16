@@ -1,48 +1,36 @@
-var array = [];
-getdata = (e) => {
+let users = JSON.parse(localStorage.getItem("users")) || []
 
-    var user_fName = document.getElementById("fName").value;
-    var user_lname = document.getElementById("lname").value;
-    var user_Email = document.getElementById("Email").value;
-    var user_password = document.getElementById("password").value;
-    var user_Number = document.getElementById("Number").value;
+// clear local storage ----    
+function logSubmit(event) {
 
-    array[0] = user_fName
-    array[1] = user_lname
-    array[2] = user_Email
-    array[3] = user_password
-    array[4] = user_Number
-    if( user_fName == ""){
-        alert("enter name")
+
+    let obj = {name: take, lname: take1, mail: mail, password: password}
+    users.push(obj)
+    
+    let useCon = /[A-Za-z]/
+    let useCon1 = /[0-9]/
+    try{
+        if( useCon.test(take.value)) throw obj.name= take.value
+        else if( useCon1.test(take.value)) throw alert("not true")
     }
-    else{
-        localStorage.setItem( user_fName, JSON.stringify(array));
-        window.open("./login.html");
+    catch(err){
+        err
     }
-};
+    // console.log(users)
+    localStorage.setItem("users", JSON.stringify(users));
 
-checkdata = () => {
-    var newArr = JSON.parse(localStorage.getItem(array))
-    var userName = document.getElementById("UserName").value;
-    var passcheck = document.getElementById("pass").value;
-
-  console.log(JSON.parse(localStorage.key.value))
-//   if (userName == x) {
-//     alert("hello")
-//     if (passcheck == y) {
-//         console.log("wellcom");
-//     } else {
-//       console.log("Email or password ");
-//     }
-//   } else {
-//     console.log("wrong Email or password");
-//   }
-
+event.preventDefault();
+window.open('./login.html')
 }
-nondata = () => {
-  localStorage.clear();
-};
 
-function funarr(item, index, arr){
-    localStorage.setItem( arr[index], JSON.stringify(te));
+
+const take = document.getElementById('fName')
+const take1 = document.getElementById('lname')
+const mail = document.getElementById('Email')
+const password = document.getElementById('password')
+const form = document.getElementById('form')
+form.addEventListener('submit', logSubmit)
+
+nondata = () => {
+    localStorage.clear()
 }
