@@ -1,23 +1,22 @@
-let users = JSON.parse(localStorage.getItem("users")) || [];
+var users = JSON.parse(localStorage.getItem("users")) || [];
         console.log(users)
         function logSubmit(event) {
-            console.log('hello from submit')
-            let compareName = UserName.value 
-            let comparePass = pass.value
-            // console.log(compareName, comparePass)
-            // console.log(users)
+            console.log('hello from submit');
+            let compareName = logName.value 
+            let comparePass = password.value
             users.map(e => {
                 if(e.name === compareName && e.password == comparePass){
-                    console.log(`Welcome ${e.name}`)
+                    console.log(`Welcome ${compareName}`)
                     log.textContent = `Welcome ${e.name}`
                 }
+                
             })
             
 
-        event.preventDefault();
+            event.preventDefault();
         }
-        const log = document.getElementById('log')
+        const log = document.getElementById('demo')
         const logName = document.getElementById('UserName')
         const password = document.getElementById('pass')
-        const form = document.getElementById('form');
-        form.addEventListener('submit', logSubmit);
+        const form = document.getElementById('form')
+        form.addEventListener('submit', logSubmit)

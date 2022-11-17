@@ -30,15 +30,18 @@
             border: none;
             border-radius: 3px;
         }
+        button:hover{
+            opacity: 0.8;
+        }
     </style>
 </head>
 <body>
         <form  id="form">
-            <input type="text" id="UserName" name="username" placeholder="UserName" onchange="checkdata()">
-            <input type="password" id="pass" name="pasSword" placeholder="Password" onchange="checkdata()">
+            <input type="text" id="UserName" placeholder="UserName">
+            <input type="password" id="pass" placeholder="Password">
             <button type="submit">Login</button>
         </form>
-        <p id="log"></p>
+        <p id="demo"></p>
     <script src="login.js"></script>
 </body>
 </html>
