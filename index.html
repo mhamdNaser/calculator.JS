@@ -1,219 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>JS</title>
-</head>
-<body>
-    <header>
-        <h1>JavaScrip Task</h1>
-    </header>
-    <main>
-        <section>
-            <div>
-                <h5>TH_03_11</h5>
-            </div>
-            <div class="button-container">
-                <button onclick="Function_first()">Task1</button>
-                <button onclick="Function_second()">Task2</button>
-                <button onclick="Function_third()">Task3</button>
-                <button onclick="Function_4th()">Task4</button>
-            </div>
-            <div><p id="demo"></p></div>
-        </section>
-        <section>
-            <div>
-                <h5>Test_Loop</h5>
-            </div>
-            <div class="button-container">
-                <button onclick="test_one()">Test1</button>
-                <button onclick="test_two()">Test2</button>
-                <button onclick="test_three()">Test3</button>
-                <button onclick="test_four()">Test4</button>
-                <button onclick="test_continue()">continue</button>
-            </div>
-            <div><p id="demo1"></p></div>
-        </section>
-        <section>
-            <div>
-                <h5>SU_06_11</h5>
-            </div>
-            <div class="button-container">
-                <button onclick="Function1_first()">Task1</button>
-                <button onclick="Function1_two()">Task2</button>
-                <button onclick="Function1_three()">Task3</button>
-            </div>
-            <div><p id="demo2"></p></div>
-        </section>
-        <section>
-            <div>
-                <h5>Test_String_Method</h5>
-            </div>
-            <div class="button-container">
-                <button onclick="test1_zero()">Test0</button>
-                <button onclick="test1_one()">Test1</button>
-                <button onclick="test1_two()">Test2</button>
-                <button onclick="test1_three()">Test3</button>
-                <button onclick="test1_four()">Test4</button>
-                <button onclick="test1_five()">Test5</button>
-            </div>
-            <div><p id="demo3"></p></div>
-        </section>
-        <section>
-            <div>
-                <h5>MO_07_11</h5>
-            </div>
-            <div class="button-container">
-                <button onclick="task_zero()">Task0</button>
-                <button onclick="task_one()">Task1</button>
-                <button onclick="task_two()">Task2</button>
-                <button onclick="task_three()">Task3</button>
-                <button onclick="task_four()">Test4</button>
-                <button onclick="task_five()">Test5</button>
-                <button onclick="task_six()">Test6</button>
-                <button onclick="task_seven()">Test7</button>
-                <button onclick="task_eght()">Test8</button>
-                <button onclick="task_nine()">Test9</button>
-                <button onclick="task_ten()">Test10</button>
-                <button onclick="task_eleven()">Test11</button>
-            </div>
-            <div><p id="demo4"></p></div>
-        </section>
-        <section>
-            <div>
-                <h5>TU_08_11</h5>
-            </div>
-            <div class="button-container">
-                <button onclick="task1_zero()">Task0</button>
-            </div>
-            <div><p id="demo4"></p></div>
-        </section>
-        <section>
-            <div>
-                <h5>WE_09_11</h5>
-            </div>
-            <div class="button-container">
-                <button onclick="task2_zero()">Task0</button>
-                <button onclick="task2_one()">Task1</button>
-            </div>
-            <div><p id="demo5"></p></div>
-        </section>
-        <section>
-            <div>
-                <div>
-                    <select id="greet" onchange="flag_chose()">
-                        <option value="orange">orange</option>
-                        <option value="syria">Syria</option>
-                        <option value="jordan">Jordan</option>
-                    </select>
-                </div>
-                <div>
-                    <img id="img1" src="" alt="">
-                </div>
-            </div>
-            <div>
-                <div>
-                    <select id="type" onchange="type_font()">
-                        <option value="Arial">Arial</option>
-                        <option value="Tahoma">Tahoma</option>
-                        <option value="sansSerif">sans-serif</option>
-                    </select>
-                    <select id="size" onchange="size_font()">
-                        <option value="8">8px</option>
-                        <option value="10">10px</option>
-                        <option value="14">14px</option>
-                        <option value="18">18px</option>
-                        <option value="24">24px</option>
-                        <option value="36">36px</option>
-                    </select>
-                </div>
-                <div>
-                    <input type="checkbox" onclick="task2_three()" id="italic" id="">Italic
-                    <input type="checkbox" onclick="task2_three()" id="bold" id="">Bold
-                    <input type="checkbox" onclick="task2_three()" id="underline" id="">Underline
-                </div>
-                <div><p id="demo6">Lorem Ipsum is simply dummy text of the printing and typesetting industry typesetting industry</p></div>
-            </div>
-            <div>
-                <div style="text-align: left;">
-                    <h3>first text</h3>
-                    <button class="norml" onclick="show1()">read more</button>
-                    <div><p id="demo7">Lorem Ipsum is simply dummy text of the printing and typesetting industry typesetting industry</p></div>
-                    <h3>second text</h3>
-                    <button class="norml" onclick="show2()">read more</button>
-                    <div><p id="demo8">Lorem Ipsum is simply dummy text of the printing and typesetting industry typesetting industry</p></div>
-                    <h3>third text</h3>
-                    <button class="norml" onclick="show3()">read more</button>
-                    <div><p id="demo9">Lorem Ipsum is simply dummy text of the printing and typesetting industry typesetting industry</p></div>
-                </div>
-            </div>
-        </section>
-        <section class="full-width">
-            <div>
-                <h5>TH_10_11</h5>
-            </div>
-            <div>
-                <form>
-                    <label>Name:</label>
-                    <input type="text" name="userName" id="usename" onchange="setData(value, name)">
-                    <label>Email:</label>
-                    <input type="email" name="userEmail" id="mail" onchange="setData(value, name)">
-                    <label>Mobile:</label>
-                    <input type="number" name="userNumber" id="phone" onchange="setData(value, name)">
-                    <button type="submit" onclick="">submit</button>
-                </form>
-                <div> 
-                    <span id="userName"></span>
-                    <span id="userEmail"></span>
-                    <span id="userNumber"></span>
-                </div>
-                <div id="tableContainer" style="width: 30%; margin: 0 auto; padding: 2%"> </div>
-            </div>
-        </section>
-        <section>
-            <div>
-                <h5>SU_13_11</h5>
-            </div>
-            <div class="button-container">
-                <button onclick="task3_zero()">Task0</button>
-            </div>
-            <div></div>
-        </section>
-        <section>
-            <div>
-            </div>
-            <div class="button-container">
-                <button onclick="task4_zero()">Task0</button>
-                <button onclick="task4_one()">Task1</button>
-                <button onclick="task4_two()">Task2</button>
-                <button onclick="task4_three()">Task3</button>
-                <button onclick="task4_four()">Test4</button>
-                <button onclick="task4_five()">Test5</button>
-                <button onclick="task4_six()">Test6</button>
-                <button onclick="task4_seven()">Test7</button>
-                <button onclick="task4_eght()">Test8</button>
-                <button onclick="task4_nine()">Test9</button>
 
-                <button onclick="task5_zero()">Task0</button>
-                <button onclick="task5_one()">Task1</button>
-                <button onclick="task5_two()">Task2</button>
-                <button onclick="task5_three()">Task3</button>
-                <button onclick="task5_four()">Test4</button>
-                <button onclick="task5_five()">Test5</button>
-                <button onclick="task5_six()">Test6</button>
-                <button onclick="task5_seven()">Test7</button>
-                <button onclick="task5_eght()">Test8</button>
-                <button onclick="task5_nine()">Test9</button>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>JS</title>
+    <script>
+        $(document).ready(function () {
+            $("#showmore").click(function () {
+                $("#text").toggleClass("expanded");
+                $("#buttonContainer").toggleClass("expanded");
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div class="all">
+        <div class="calculater">
+            <div class="resultArea">
+                <span id="memoryArea" class="memoryArea"></span>
+                <span class="operArea">
+                    <input type="text" name="text" id="operInput" placeholder="0">
+                </span>
             </div>
-            <div><p id="demo10"></p></div>
-        </section>
-    </main>
-    <script src="./script/script.js"></script>
-    <script src="./script/script1.js"></script>
-    <script src="./script/script2.js"></script>
-    <script src="./script/sundy.js"></script>
+            <div id="numberArea" class="numberArea">
+                <!-- this is number Area -->
+            </div>
+        </div>
+        <div class="advancecalculater">
+            <div class="row">
+                <button id="showmore" class="fa fa-chevron-right"></button>
+                <div id="buttonContainer">
+                    <div class="row justify-content-center align-items-center g-2 h-100">
+                        <span id="text" class="col text-danger fw-bolder fs-3 text-center">Comming Soon</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/js/analysisNum.js"></script>
+    <script src="./assets/js/calculater.js"></script>
+    <script src="./assets/js/claculaterOperation.js"></script>
+    <script src="./assets/js/script.js"></script>
 </body>
+
 </html>

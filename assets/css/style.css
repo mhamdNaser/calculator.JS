@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+}
+
+#text {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0px;
+    transition: width 0.5s ease;
+}
+
+#text.expanded {
+    width: 100%;
+  }
+
+.all {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.calculater {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.advancecalculater {
+    margin-left: 15px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.advancecalculater button {
+    height: 490px;
+    width: 40px;
+    background-color: white;
+    color: gainsboro;
+    font-size: 24px;
+    border: none;
+    z-index: 2;
+}
+
+#buttonContainer {
+    overflow: hidden;
+    height: 490px;
+    width: 0px;
+    margin-left: -25px;
+    background-color: lightblue;
+    left: 20;
+    z-index: -1;
+    transition: width 0.5s ease;
+}
+
+#buttonContainer.expanded {
+    width: 400px;
+}
+
+.numberArea {
+    display: grid;
+    margin: 0 auto;
+    width: 400px;
+    height: 400px;
+    grid-template-columns: 25% 25% 25% 25%;
+    border-bottom: 2px solid #457b9d;
+    border-left: 2px solid #457b9d;
+    border-right: 2px solid #457b9d;
+}
+
+.numberArea button {
+    box-shadow: 0px 1px 6px white inset;
+    text-align: center;
+    background-color: #457b9d;
+    border-color: white;
+    border-width: 1px;
+    border-style: solid;
+    color: #a8dadc;
+    font-weight: bolder;
+    font-size: 18px;
+    transition: background-color 0.5s ease-in;
+}
+
+.calculater .resultArea {
+    margin: 0 auto;
+    width: 400px;
+    height: 90px;
+    background-color: #fff;
+    border-top: 2px solid #457b9d;
+    border-left: 2px solid #457b9d;
+    border-right: 2px solid #457b9d;
+}
+
+.resultArea span {
+    display: block;
+}
+
+.resultArea .memoryArea {
+    height: 25px;
+    padding: 8px;
+    padding-left: 20px;
+}
+
+.resultArea .memoryArea button {
+    background-color: white;
+    margin-left: 8px;
+    border: none;
+}
+
+
+.resultArea .operArea {
+    text-align: center;
+    height: 60px;
+    padding-left: 20px;
+    border-top: #000000;
+}
+
+.resultArea .operArea input {
+    height: 40px;
+    width: 80%;
+    margin-top: 22px;
+    font-size: 22px;
+    font-weight: bolder;
+    border: none;
+    background: none;
+}
+
+.resultArea .operArea input:focus {
+    outline: none;
+}
+
+.numberArea button:hover {
+    background-color: #1d3557;
+    color: white;
+}
